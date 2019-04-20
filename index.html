@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Code-X-Code</title>
+        <link href ="./style.css" rel="stylesheet" text="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merienda|Special+Elite" rel="stylesheet"> 
+    </head>
+    <body>
+        <div>
+            <h1>Code - X - Code</h1>
+        </div>
+        <div id="open">
+            <p><strong>Code-X-Code</strong> is a final project for hacktiv8 phase 0<br> This website is used for change 4 digit code into randomized alphabet code and vice versa from alphabet code changed back to 4 digit code. The randomized alphabet code is unique by choosing number (0 to 23) on unique number.</p>
+        </div>
+        <div id="main">
+            <label for="code1">Your Code: </labelfor>
+            <input type="text" placeholder="Input Code" id="code1" value="">
+            <br>
+            <label for="uniq">Unique Number: </label>
+            <select placeholder="Input Number 0 to 23" id="uniq">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+            </select>
+            <ul>
+                <li>
+                    <input type="button" value="Convert to Alphabet Code" id="conAlph">
+                </li>
+                <li>
+                    <input type="button" value="Convert to Numeric Code" id="conNum">
+                </li>
+                <li>
+                    <input type="button" value="Clear" id="clear">
+                </li>
+            </ul>
+            <p id="hasil"></p>
+        </div>
+        <script src="coder.js"></script>
+    </body>
+    <footer>
+
+    </footer>
+</html>
