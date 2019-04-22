@@ -52,3 +52,7 @@ h1 {
     font-weight: 800;
     font-family: 'Special Elite', cursive;
 }
+
+#code1, #uniq, #conAlph, #conNum, #clear {
+    font-size: 20px;
+}

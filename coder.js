@@ -74,7 +74,7 @@ function checkUniq (codes){
 }
 
 convertAlph.addEventListener("click", function(event){
-    if (String(inputCode.value).length > 4 || String(inputCode.value).length < 4){
+    if (String(inputCode.value).length > 4 || String(inputCode.value).length < 4 || coder(inputCode.value).length === 0){
         alert("Input your code with 4 digit number");
         event.defaultPrevented;
     } else {
@@ -83,7 +83,7 @@ convertAlph.addEventListener("click", function(event){
 })
 
 convertNum.addEventListener("click", function(event){
-    if (String(inputCode.value).length > 4 || String(inputCode.value).length < 4){
+    if (String(inputCode.value).length > 4 || String(inputCode.value).length < 4 || numberization(inputCode.value).length === 0){
         alert("Input your code with 4 alphabet code");
         event.defaultPrevented;
     } else if (Number(uniqNum.value) < 0 || Number(uniqNum.value) > 23 || uniqNum.value.length === 0){
