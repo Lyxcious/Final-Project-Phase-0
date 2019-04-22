@@ -74,7 +74,7 @@ function checkUniq (codes){
 }
 
 convertAlph.addEventListener("click", function(event){
-    if (String(inputCode.value).length > 4 || String(inputCode.value).length < 4 || coder(inputCode.value).length === 0){
+    if (String(inputCode.value).length > 4 || String(inputCode.value).length < 4 || isNaN(inputCode.value) === true){
         alert("Input your code with 4 digit number");
         event.defaultPrevented;
     } else {
