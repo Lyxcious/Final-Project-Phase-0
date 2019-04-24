@@ -58,3 +58,8 @@ h1 {
 #code1, #uniq, #conAlph, #conNum, #clear {
     font-size: 20px;
 }
+
+#code1 {
+    width: 130px;
+    text-align: center;
+}
