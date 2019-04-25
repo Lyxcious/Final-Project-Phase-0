@@ -32,7 +32,7 @@ function gensAnagram (word, anagram2 = "", anagrams2 = []){
         anagram2 = anagram2.slice(0, anagram2.length-1);
     }
     var uniq = [...new Set(anagrams2)];
-    return uniq[Number(uniqNum.value)];
+    return uniq[Number(uniqNum.value-1)];
 }
 
 function coder(num){
@@ -84,10 +84,7 @@ convertAlph.addEventListener("click", function(event){
 
 convertNum.addEventListener("click", function(event){
     if (String(inputCode.value).length > 4 || String(inputCode.value).length < 4 || numberization(inputCode.value).length === 0){
-        alert("Input your code with 4 alphabet code");
-        event.defaultPrevented;
-    } else if (Number(uniqNum.value) < 0 || Number(uniqNum.value) > 23 || uniqNum.value.length === 0){
-        alert("Input unique number with number between 0 to 23");
+        alert("Input your code with the right 4 alphabet code");
         event.defaultPrevented;
     } else {
         if (checkUniq(inputCode.value)){
@@ -100,6 +97,6 @@ convertNum.addEventListener("click", function(event){
 
 clear.addEventListener("click", function(event){
     inputCode.value = "";
-    uniqNum.value = 0;
+    uniqNum.value = 1;
     hasil.innerHTML = ""
 })
